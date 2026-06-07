@@ -1,0 +1,2 @@
+[console_scripts]
+text-clean = text_clean.cleaner:main

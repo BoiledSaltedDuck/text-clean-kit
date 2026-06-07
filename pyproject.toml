@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text-clean-kit"
+version = "1.0.0"
+description = "文本文件清洗处理工具 - 去重行、去空行、去首尾空格、统一换行符、大小写转换等"
+readme = "README.md"
+authors = [
+    {name = "BoiledSaltedDuck", email = "tools@office-tools.pro"}
+]
+license = {text = "MIT"}
+keywords = ["text", "clean", "dedup", "trim", "文本清洗", "文件处理"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.7"
+dependencies = []
+
+[project.scripts]
+text-clean = "text_clean.cleaner:main"
+
+[tool.setuptools.packages.find]
+include = ["text_clean*"]
